@@ -1,0 +1,153 @@
+:root {
+    --background: #00030C;
+    --write-main: #FFFFFF;
+    --gray-second: #C0C0C0;
+    --blue-button:#1A7FFB;    
+    --blue-transition:#2988fc;
+    --font-main: "inter", sans-sefif;
+    --gray-transition:  rgb(49, 49, 49);
+}
+
+body {
+    background-color:var(--background) ;
+    color: var(--write-main);
+    font-family: var(--font-main);
+    font-size: 1rem;
+    font-weight: 400;
+    
+}
+
+.principal {
+    background-image: url("../../assets/img/Background.png");
+    background-repeat: no-repeat;
+    background-size: cover;     
+    text-align: center;     
+}
+
+.container {
+     height: 100vh;           
+     display: grid; 
+     grid-template-columns: 1fr 1fr;  
+     align-items: center;         
+}
+
+.wrapper {            
+    margin: 0 5em;    
+}
+
+.title {
+    font-size: 1.6rem;   
+    font-weight: 700;    
+    line-height: 34px;
+    
+}
+
+.img_combo {       
+    margin: .5rem 0 3.3rem;    
+}
+
+.btn {
+    background-color: var(--blue-button);
+    padding: 1em;    
+    border-radius: 8px;  
+    display: block;   
+    margin-bottom: 16px;   
+}
+
+.btn:hover {
+    background-color: var(--blue-transition);
+    color: var(--gray-transition);    
+}
+
+.-btn_nocolor {
+    background-color: transparent;
+    border: solid 2px var(--write-main);
+}
+
+.-btn_nocolor:hover {
+    border: solid 2px transparent;  
+}
+
+
+.legend {
+    font-size: .8rem;
+    color: var(--gray-second);
+    text-align: center;
+}
+
+.secundario {
+    margin: 5rem 4rem 0 6rem ;
+}
+
+.img_secundaria {/* ativar essa parte se for necessário, pois não influenciou muito no layout*/ 
+    /* width: 80%; */
+    
+}
+
+.telas {
+    justify-self: center;
+}
+
+.-t_secundario {
+    font-size: 3rem;
+    margin-bottom: 1.5rem;
+}
+
+.paragraph {
+    color: var(--gray-second);
+    line-height: 1.4rem;
+}
+
+.-btnsmall{
+    display: inline-block;
+    text-align:center;
+    margin-top: 16px;
+    
+}
+
+.container-devices {
+    text-align: center;
+    margin: 125px 0 40px;
+}
+
+.list-devices {
+    display: flex;
+    justify-content: center;
+    margin: 5rem 0 ;
+}
+
+.list-devices > .itens > h3 {
+    font-size: 2rem;
+    font-weight: bold;
+}
+
+.footer {
+    text-align: center;
+}
+
+.img-footer {
+    margin-bottom: 47px;
+}
+
+.list-footer > .itens {
+    display: inline-block;
+    margin-right: 16px;
+}
+
+
+ .list-footer > .itens:hover {
+    color: var(--gray-second);
+}
+
+.container-textfooter {
+    margin-top: 24px;
+    padding:  0  60px 120px;
+}
+
+.text-footer {
+    text-align: center;
+    font-size: 14px;  
+    color: var(--gray-second); 
+    margin-bottom: 30px;
+    line-height: 20px;
+}
